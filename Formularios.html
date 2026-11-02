@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Practica de formularios </title>
+    </head>
+
+    <body>
+     <!--form = etiqueta encargada de ccrear formularios-->
+     <!--action = etiqueta encargada de recibir la infromacion que mandamos al formulario-->
+     <h1> FORMULARIOS </h1>
+     <!--FORMULARIO BASICO-->
+     <!--action = a donde se envia || get (pasa los datos por la URL)||post (oculto en el cuerpo de los paquetes http)-->
+     <!--label for = id del imput al que quiero hacer referncia || name = clave del dato enviado-->
+
+     <form action="" method="get">
+        <label for="campo1"> Introduce tu nombre</label>
+        <br>
+      <input type="text" name="nombrePersona" id="campo1">
+      <input type="submit"value="Entregar">
+     </form>
+     <hr>
+     <hr>
+     <hr>
+     <hr>
+     <!--TIPOS DE INPUTS-->
+     <form action="" method="get">
+        Texto: <input type="text" name="texto" >
+        <br>
+        Contraseña: <input type="password" name="contrasenia" id=""> <!--Nunca poner la ñ, usar contrasenia-->
+        <br>
+        Número: <input type="number" name="numero" step="20">
+        <br>
+        Correo: <input type="email" name="correo" >
+        <br>
+        Telefono: <input type="tel" name="telefono">
+        <br>
+        Fecha: <input type="date" name="fecha">
+        <br>
+        Hora: <input type="time" name="hora">
+        <input type="submit" value="ENVIAR">
+     </form>
+
+     <!--ATRIBUTOS BÁSICOS-->
+     <!--
+     value =valor predeterminado siempre
+     placeholder = valor que puede servir para incicar como debemos rellenar un campo
+     required = valor obligatorio
+     minlength
+     maxlength
+     min
+     max
+     size
+     -->
+
+     <hr>
+     <hr>
+     <hr>
+     <form action="" method="get"></form>
+     nombre: <input type="text" name="Nombre de usuario"  minlength="2" maxlength="8" required>
+     <br>
+     edad: <input type="number" name="edad" min="18" max="67" required>
+     <br>
+     ciudad: <input type="text" name="Ciudad" placeholder="ciudad donde reside" size="1000">
+     <br>
+     <textarea name="comentario" cols="10" rows="5" placeholder="Introduce un comentario"></textarea>
+     <br>
+     <input type="submit" value="ENVIAR">
+
+     <hr>
+     <hr>
+     <hr>
+     <hr>
+     <!--CHECKBOX, RADIO Y LISTAS DESPLEGABLES -->
+     <form action="" method="get">
+
+     <input type="checkbox" name="deporte" value="si"  >
+     <input type="checkbox" name="musica" >
+     <input type="checkbox" name="lectura" >
+     <br>
+     DAW: <input type="radio" name="estudios"   value="daw">
+     DAM:  <input type="radio" name="estudios" value="dam">
+     ASIR:  <input type="radio" name="estudios"  value="ASIR">
+        <br><br><br>
+     <select name="provincia" >
+        <option disabled selected>--SELECCIONA UNA PROVINCIA--</option>
+        <option value="cadiz">Cádiz</option>
+        <option value="malaga">Málaga</option>
+        <option value="almeria">Almería</option>
+     </select>
+
+        <input type="submit" value="ENVIAR" >
+
+     </form>
+
+     <hr>
+     <hr>
+     <hr>
+
+     <!--ESTADOS:-->
+     <!--   
+     disabled: no evitable y no se envia
+     readonly: no editable y si se envia
+     autofocus: cursor al cargar la pagina        
+     -->
+     <form action="" method="get">
+        Normal: <input type="text" name="normal" value="editable">
+        <br>
+        Disabled: <input type="text" name="desabilitado" disabled value="disabled">
+        <br>
+        Readonly: <input type="text" name="lectura" readonly value="readonly">
+        <br>
+        Autofocus: <input type="text" name="focus" autofocus >
+        <input type="submit" value="ENVIAR">
+
+     </form>
+     <hr>
+     <hr>
+     <hr>
+     <!--TABINEX-->
+
+     <form action="" method="post">
+        Tercero: <input type="text" name="c3" tabindex="3">
+        Octavo: <input type="text" name="c8" tabindex="8">
+        Septimo<input type="text" name="c7" tabindex="7" >
+        Sexto: <input type="text" name="c6" tabindex="6">
+        Quinto: <input type="text" name="c5" tabindex="5">
+        Cuarto: <input type="text" name="c4" tabindex="4">
+        Segundo: <input type="text" name="c2" tabindex="2">
+        PRIMERO: <input type="text" name="c1" tabindex="1">
+
+
+     </form>
+
+     <hr>
+     <hr>
+     <hr>
+
+     <!--BOTONES + FIELDSET + LEGEND-->
+     <form action="" method="post">
+        <fieldset style="background-color: bisque;">
+         <legend>DATOS PERSONALES</legend>
+         Nombre: <input type="text" name="nombre" value="Kico">
+         <br>
+         Apellidos: <input type="text" name="apellidos" value="Heredia Cortes">
+        </fieldset>
+        <fieldset>
+         <legend>BOTONES PARA ENVIAR</legend>
+         <input type="submit" value="ENVIAR">
+         <input type="reset" value="REINICIAR">
+         <button>ENVIAR</button>
+         <input type="button" value="JS" onclick="alert ('HOLA')">
+        </fieldset>
+
+
+     </form>
+    </body>
+</html>
