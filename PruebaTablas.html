@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba con tablas en html t</title>
+    </head>
+
+    <body>
+         <!-- table =etiqueta de creacion de la tabla -->
+         <!-- caption = titulo de la tabla, parte que indica que contienen las columnas-->
+         <!--tr = creación de una fila en una tabla-->
+         <!--td = table data: el contenido de una fila-->
+         <!--th = crea celdas en formas de cabecera con el texto en negrita y centrado-->
+
+         <h1> creacion de mi primera tabla en html </h1>
+
+         <table border="4">
+            <caption>Precio de los mangos</caption>
+            <thead>
+            <tr>
+                <th>Provincia</th>
+                <th>Precio</th>
+            </tr>
+            </thead>
+           
+            <tbody style="background-color: aqua;">
+            <tr> <!--Esto se puede crear de manera mas rapida utilizando un atajo tr>td*2-->
+                <td>Málaga</td>
+                <td>2 €</td>           
+            </tr>
+            <tr>
+                <td>Granada</td>
+                <td>1.80 €</td>
+            </tr>
+            <tr>
+                <td>Cádiz</td>
+                <td>1.90 €</td>
+            </tr>            
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Media</th>
+                    <th>1.9 €</th>
+                </tr>
+            </tfoot>
+         </table>
+
+         <table border="4">
+            <caption> tabla de empleados</caption>
+            <thead style="background-color: antiquewhite;">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>Ciudad</th>
+                    <th>Nómina</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Paco</td>
+                    <td>60</td>
+                    <td>Málaga</td>
+                    <td>2800 €</td>
+                </tr>
+                 <tr>
+                    <td>Miriam</td>
+                    <td>26</td>
+                    <td>Granada</td>
+                    <td>1100 €</td>
+                </tr>
+                 <tr>
+                    <td>Ana</td>
+                    <td>74</td>
+                    <td>Cádiz</td>
+                    <td>3200 €</td>
+                </tr>
+                 <tr>
+                    <td>Ale</td>
+                    <td>18</td>
+                    <td>Mallorca</td>
+                    <td>920 €</td>
+                </tr>
+            </tbody>
+            <tfoot>
+
+
+            </tfoot>
+
+         </table>
+
+
+         <table>
+            <colgroup> <!--Indica el color de una columna al completo-->
+            <col style="background-color: antiquewhite;"> <!--color de la primera columna de la tabla-->
+            <col style="background-color: bisque;">
+            <!--color de la segunda columna de la tabla-->
+            </colgroup>
+            <tr>
+                <td>Paco</td>
+                <td>2800</td>
+            </tr>
+            <tr>
+                <td>Miriam</td>
+                <td>1100</td>
+            </tr>
+         </table>
+
+
+
+         <table border="2">
+            <tr>
+                <th>Nombre completo</th>
+                <th>edad</th>
+            </tr>
+            <tr>
+                <td>Jose </td>
+                <td>Sánchez</td>
+                <td>20</td>
+            </tr>
+         </table>
+
+         <table border="2">
+            <tr>
+                <th>Nombre</th>
+                <th>Asignaturas</th>
+                <th>Nota</th>
+            </tr>
+            <tr>
+                <td><col span="2">Samu</td>
+                <td>Mates</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Lengua</td>
+                <td>9</td>
+            </tr>
+
+         </table>
+    </body>
+</html>
